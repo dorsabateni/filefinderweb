@@ -1,94 +1,173 @@
+/* Reset some default styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4a90e2, #50e3c2);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
-  max-width: 800px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.tagline {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.features, .installation {
-  margin: 20px 0;
+header .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
 }
 
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #50e3c2;
+header ul {
+    list-style: none;
+    display: flex;
 }
 
-ul, ol {
-  list-style: none;
-  margin: 10px 0;
+header ul li {
+    margin-left: 20px;
 }
 
-ul li, ol li {
-  margin: 10px 0;
-  font-size: 1rem;
-  line-height: 1.5;
+header ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-code {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 2px 6px;
-  border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
+/* Hero Section */
+#hero {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#hero .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero .hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#hero .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #555;
+}
+
+/* Features Section */
+#features {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    margin-bottom: 40px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 18px;
+}
+
+/* Installation Section */
+#install {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#install h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.installation-steps {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .cta {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-.github-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #50e3c2;
-  color: #000;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.cta a {
+    color: #ff7e5f;
+    font-weight: bold;
 }
 
-.github-link:hover {
-  background-color: #4a90e2;
-  color: #fff;
-  transform: scale(1.05);
-}
-
+/* Footer */
 footer {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #ccc;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
